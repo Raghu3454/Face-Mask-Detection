@@ -1,38 +1,64 @@
 # 😷 Face Mask Detection using Deep Learning
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Deep Learning](https://img.shields.io/badge/Deep%20Learning-TensorFlow-orange)
+![Deep Learning](https://img.shields.io/badge/TensorFlow-CNN-orange)
 ![Computer Vision](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
 
 ---
 
 ## 📌 Project Overview
 
-The **Face Mask Detection System** uses **Deep Learning and Computer Vision** to detect whether a person is wearing a **face mask** or **not wearing a mask** in real time.
+The **Face Mask Detection System** is a deep learning project that detects whether a person is wearing a **face mask** or **not wearing a mask** using a webcam.
 
-The model is trained using a **Convolutional Neural Network (CNN)** and uses **OpenCV** to detect faces through a webcam.
+This project uses **Convolutional Neural Networks (CNN)** for image classification and **OpenCV** for real-time face detection.
 
-This project demonstrates how **Artificial Intelligence can be used for public safety and health monitoring**.
+The model is trained using a dataset from **Kaggle**.
 
 ---
 
 ## 🚀 Features
 
-✔ Real-time face mask detection
-✔ Detects **Mask** and **No Mask**
+✔ Real-time mask detection
+✔ Detects **Mask 😷** and **No Mask ❌**
 ✔ Uses **CNN Deep Learning model**
-✔ Webcam-based detection using OpenCV
-✔ Beginner-friendly AI project
+✔ Webcam-based detection
+✔ Kaggle dataset training
 
 ---
 
 ## 🛠️ Technologies Used
 
-* 🐍 Python
-* 🤖 TensorFlow / Keras
-* 👁️ OpenCV
-* 🔢 NumPy
-* 📊 Matplotlib
+* Python
+* TensorFlow / Keras
+* OpenCV
+* NumPy
+* Matplotlib
+
+---
+
+## 📊 Dataset
+
+The dataset used for this project is from **Kaggle**.
+
+Dataset link:
+
+https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
+
+Dataset structure:
+
+```text
+dataset
+│
+├── with_mask
+│   ├── image1.jpg
+│   ├── image2.jpg
+│
+├── without_mask
+│   ├── image1.jpg
+│   ├── image2.jpg
+```
+
+The dataset contains images of people **with masks and without masks**.
 
 ---
 
@@ -54,34 +80,21 @@ face-mask-detection
 
 ---
 
-## 📊 Dataset
-
-The dataset contains two categories:
-
-| Folder       | Description                    |
-| ------------ | ------------------------------ |
-| with_mask    | Images of people wearing masks |
-| without_mask | Images of people without masks |
-
-Dataset can be downloaded from Kaggle.
-
----
-
 ## ⚙️ Installation
 
-Clone the repository
+Clone the repository:
 
 ```
 git clone https://github.com/yourusername/face-mask-detection.git
 ```
 
-Move into the project folder
+Move to project directory:
 
 ```
 cd face-mask-detection
 ```
 
-Install required libraries
+Install required libraries:
 
 ```
 pip install tensorflow opencv-python numpy matplotlib
@@ -89,55 +102,43 @@ pip install tensorflow opencv-python numpy matplotlib
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ Run the Project
 
-### Step 1: Train the Model
+### Train Model
 
 ```
 python train_model.py
 ```
 
-This will generate the trained model:
-
-```
-face_mask_model.h5
-```
-
----
-
-### Step 2: Run Real-Time Detection
+### Start Detection
 
 ```
 python detect_mask.py
 ```
 
-Your webcam will open and detect:
+The webcam will open and detect:
 
-* **Mask 😷**
-* **No Mask ❌**
+* **Mask**
+* **No Mask**
 
 ---
 
-## 🧠 Deep Learning Model
+## 🧠 Model Workflow
 
-The project uses a **Convolutional Neural Network (CNN)** for image classification.
-
-Workflow:
-
-1. Load dataset images
+1. Load Kaggle dataset
 2. Preprocess and resize images
 3. Train CNN model
 4. Save trained model
-5. Detect mask in real-time using webcam
+5. Detect mask using webcam
 
 ---
 
 ## 🔮 Future Improvements
 
-* Improve model accuracy
-* Add mobile camera detection
-* Deploy using **Streamlit or Flask**
-* Integrate with **CCTV cameras**
+* Increase dataset size
+* Improve CNN accuracy
+* Deploy as web application
+* Integrate with CCTV systems
 
 ---
 
@@ -148,5 +149,4 @@ BTech – Artificial Intelligence & Data Science
 
 ---
 
-⭐ If you like this project, consider giving it a **star on GitHub**.
-# Face-Mask-Detection
+⭐ If you like this project, consider giving it a star on GitHub.
