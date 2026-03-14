@@ -19,9 +19,13 @@ The model is trained using a dataset from **Kaggle**.
 ## 🚀 Features
 
 ✔ Real-time mask detection
+
 ✔ Detects **Mask 😷** and **No Mask ❌**
+
 ✔ Uses **CNN Deep Learning model**
+
 ✔ Webcam-based detection
+
 ✔ Kaggle dataset training
 
 ---
